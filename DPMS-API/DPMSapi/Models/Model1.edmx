@@ -1,0 +1,872 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="playgroundModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="appuser">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+          <Property Name="password" Type="varchar" MaxLength="20" />
+          <Property Name="role" Type="varchar" MaxLength="20" />
+          <Property Name="contact" Type="varchar" MaxLength="15" />
+          <Property Name="name" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="area">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+          <Property Name="cityid" Type="int" />
+        </EntityType>
+        <EntityType Name="booking">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="gid" Type="int" />
+          <Property Name="cid" Type="int" />
+          <Property Name="requestdate" Type="date" />
+          <Property Name="matchdate" Type="date" />
+          <Property Name="s_time" Type="time" Precision="7" />
+          <Property Name="e_time" Type="time" Precision="7" />
+          <Property Name="status" Type="varchar" MaxLength="10" />
+          <Property Name="amount" Type="decimal" Precision="18" Scale="0" />
+          <Property Name="mlevel" Type="varchar" MaxLength="15" />
+          <Property Name="c_name" Type="varchar" MaxLength="30" />
+          <Property Name="Fromdate" Type="date" />
+          <Property Name="Todate" Type="date" />
+          <Property Name="request_time" Type="time" Precision="7" />
+        </EntityType>
+        <EntityType Name="city">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="facility">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="feedback">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="comment" Type="varchar" MaxLength="500" />
+          <Property Name="rating" Type="int" />
+          <Property Name="gid" Type="int" />
+          <Property Name="cid" Type="int" />
+          <Property Name="f_date" Type="date" />
+        </EntityType>
+        <EntityType Name="ground">
+          <Key>
+            <PropertyRef Name="gid" />
+          </Key>
+          <Property Name="gid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="gname" Type="varchar" MaxLength="50" />
+          <Property Name="city" Type="varchar" MaxLength="20" />
+          <Property Name="area" Type="varchar" MaxLength="20" />
+          <Property Name="capacity" Type="int" />
+          <Property Name="gtype" Type="varchar" MaxLength="20" />
+          <Property Name="contact" Type="varchar" MaxLength="15" />
+          <Property Name="image" Type="varchar" MaxLength="100" />
+          <Property Name="address" Type="varchar" MaxLength="300" />
+          <Property Name="description" Type="varchar" MaxLength="500" />
+          <Property Name="size" Type="varchar" MaxLength="20" />
+          <Property Name="oid" Type="int" />
+          <Property Name="m_duration" Type="varchar" MaxLength="10" />
+          <Property Name="mfee" Type="int" />
+          <Property Name="disc" Type="int" />
+        </EntityType>
+        <EntityType Name="ground_facility">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="gid" Type="int" />
+          <Property Name="fid" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6013: The table/view 'playground.dbo.map' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="map">
+          <Property Name="id" Type="int" />
+          <Property Name="lng" Type="varchar" MaxLength="50" />
+          <Property Name="lat" Type="varchar" MaxLength="50" />
+        </EntityType>-->
+        <EntityType Name="membership">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="requestdate" Type="date" />
+          <Property Name="joindate" Type="date" />
+          <Property Name="enddate" Type="date" />
+          <Property Name="amount" Type="int" />
+          <Property Name="duration" Type="varchar" MaxLength="15" />
+          <Property Name="status" Type="varchar" MaxLength="10" />
+          <Property Name="gid" Type="int" />
+          <Property Name="cid" Type="int" />
+        </EntityType>
+        <EntityType Name="schedule">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="day" Type="varchar" MaxLength="15" />
+          <Property Name="fee" Type="int" />
+          <Property Name="starttime" Type="time" Precision="7" />
+          <Property Name="endtime" Type="time" Precision="7" />
+          <Property Name="gid" Type="int" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <Association Name="FK__area__cityid__4BAC3F29">
+          <End Role="city" Type="Self.city" Multiplicity="0..1" />
+          <End Role="area" Type="Self.area" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="city">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="area">
+              <PropertyRef Name="cityid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__booking__cid__34C8D9D1">
+          <End Role="appuser" Type="Self.appuser" Multiplicity="0..1" />
+          <End Role="booking" Type="Self.booking" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="appuser">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="booking">
+              <PropertyRef Name="cid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__booking__gid__33D4B598">
+          <End Role="ground" Type="Self.ground" Multiplicity="0..1" />
+          <End Role="booking" Type="Self.booking" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ground">
+              <PropertyRef Name="gid" />
+            </Principal>
+            <Dependent Role="booking">
+              <PropertyRef Name="gid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__feedback__cid__2F10007B">
+          <End Role="appuser" Type="Self.appuser" Multiplicity="0..1" />
+          <End Role="feedback" Type="Self.feedback" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="appuser">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="feedback">
+              <PropertyRef Name="cid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__feedback__gid__2E1BDC42">
+          <End Role="ground" Type="Self.ground" Multiplicity="0..1" />
+          <End Role="feedback" Type="Self.feedback" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ground">
+              <PropertyRef Name="gid" />
+            </Principal>
+            <Dependent Role="feedback">
+              <PropertyRef Name="gid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ground__oid__0DAF0CB0">
+          <End Role="appuser" Type="Self.appuser" Multiplicity="0..1" />
+          <End Role="ground" Type="Self.ground" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="appuser">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ground">
+              <PropertyRef Name="oid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ground_faci__fid__239E4DCF">
+          <End Role="facility" Type="Self.facility" Multiplicity="0..1" />
+          <End Role="ground_facility" Type="Self.ground_facility" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="facility">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ground_facility">
+              <PropertyRef Name="fid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ground_faci__gid__22AA2996">
+          <End Role="ground" Type="Self.ground" Multiplicity="0..1" />
+          <End Role="ground_facility" Type="Self.ground_facility" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ground">
+              <PropertyRef Name="gid" />
+            </Principal>
+            <Dependent Role="ground_facility">
+              <PropertyRef Name="gid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__membership__cid__29572725">
+          <End Role="appuser" Type="Self.appuser" Multiplicity="0..1" />
+          <End Role="membership" Type="Self.membership" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="appuser">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="membership">
+              <PropertyRef Name="cid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__membership__gid__286302EC">
+          <End Role="ground" Type="Self.ground" Multiplicity="0..1" />
+          <End Role="membership" Type="Self.membership" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ground">
+              <PropertyRef Name="gid" />
+            </Principal>
+            <Dependent Role="membership">
+              <PropertyRef Name="gid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__schedule__gid__1A14E395">
+          <End Role="ground" Type="Self.ground" Multiplicity="0..1" />
+          <End Role="schedule" Type="Self.schedule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ground">
+              <PropertyRef Name="gid" />
+            </Principal>
+            <Dependent Role="schedule">
+              <PropertyRef Name="gid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ground_ground">
+          <End Role="ground" Type="Self.ground" Multiplicity="1" />
+          <End Role="ground1" Type="Self.ground" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="ground">
+              <PropertyRef Name="gid" />
+            </Principal>
+            <Dependent Role="ground1">
+              <PropertyRef Name="gid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="playgroundModelStoreContainer">
+          <EntitySet Name="appuser" EntityType="Self.appuser" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="area" EntityType="Self.area" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="booking" EntityType="Self.booking" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="city" EntityType="Self.city" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="facility" EntityType="Self.facility" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="feedback" EntityType="Self.feedback" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ground" EntityType="Self.ground" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ground_facility" EntityType="Self.ground_facility" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="membership" EntityType="Self.membership" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="schedule" EntityType="Self.schedule" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__area__cityid__4BAC3F29" Association="Self.FK__area__cityid__4BAC3F29">
+            <End Role="city" EntitySet="city" />
+            <End Role="area" EntitySet="area" />
+          </AssociationSet>
+          <AssociationSet Name="FK__booking__cid__34C8D9D1" Association="Self.FK__booking__cid__34C8D9D1">
+            <End Role="appuser" EntitySet="appuser" />
+            <End Role="booking" EntitySet="booking" />
+          </AssociationSet>
+          <AssociationSet Name="FK__booking__gid__33D4B598" Association="Self.FK__booking__gid__33D4B598">
+            <End Role="ground" EntitySet="ground" />
+            <End Role="booking" EntitySet="booking" />
+          </AssociationSet>
+          <AssociationSet Name="FK__feedback__cid__2F10007B" Association="Self.FK__feedback__cid__2F10007B">
+            <End Role="appuser" EntitySet="appuser" />
+            <End Role="feedback" EntitySet="feedback" />
+          </AssociationSet>
+          <AssociationSet Name="FK__feedback__gid__2E1BDC42" Association="Self.FK__feedback__gid__2E1BDC42">
+            <End Role="ground" EntitySet="ground" />
+            <End Role="feedback" EntitySet="feedback" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ground__oid__0DAF0CB0" Association="Self.FK__ground__oid__0DAF0CB0">
+            <End Role="appuser" EntitySet="appuser" />
+            <End Role="ground" EntitySet="ground" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ground_faci__fid__239E4DCF" Association="Self.FK__ground_faci__fid__239E4DCF">
+            <End Role="facility" EntitySet="facility" />
+            <End Role="ground_facility" EntitySet="ground_facility" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ground_faci__gid__22AA2996" Association="Self.FK__ground_faci__gid__22AA2996">
+            <End Role="ground" EntitySet="ground" />
+            <End Role="ground_facility" EntitySet="ground_facility" />
+          </AssociationSet>
+          <AssociationSet Name="FK__membership__cid__29572725" Association="Self.FK__membership__cid__29572725">
+            <End Role="appuser" EntitySet="appuser" />
+            <End Role="membership" EntitySet="membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__membership__gid__286302EC" Association="Self.FK__membership__gid__286302EC">
+            <End Role="ground" EntitySet="ground" />
+            <End Role="membership" EntitySet="membership" />
+          </AssociationSet>
+          <AssociationSet Name="FK__schedule__gid__1A14E395" Association="Self.FK__schedule__gid__1A14E395">
+            <End Role="ground" EntitySet="ground" />
+            <End Role="schedule" EntitySet="schedule" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ground_ground" Association="Self.FK_ground_ground">
+            <End Role="ground" EntitySet="ground" />
+            <End Role="ground1" EntitySet="ground" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="playgroundModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="appuser">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="password" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="role" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="contact" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="bookings" Relationship="Self.FK__booking__cid__34C8D9D1" FromRole="appuser" ToRole="booking" />
+          <NavigationProperty Name="feedbacks" Relationship="Self.FK__feedback__cid__2F10007B" FromRole="appuser" ToRole="feedback" />
+          <NavigationProperty Name="grounds" Relationship="Self.FK__ground__oid__0DAF0CB0" FromRole="appuser" ToRole="ground" />
+          <NavigationProperty Name="memberships" Relationship="Self.FK__membership__cid__29572725" FromRole="appuser" ToRole="membership" />
+        </EntityType>
+        <EntityType Name="area">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="cityid" Type="Int32" />
+          <NavigationProperty Name="city" Relationship="Self.FK__area__cityid__4BAC3F29" FromRole="area" ToRole="city" />
+        </EntityType>
+        <EntityType Name="booking">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="gid" Type="Int32" />
+          <Property Name="cid" Type="Int32" />
+          <Property Name="requestdate" Type="DateTime" Precision="0" />
+          <Property Name="matchdate" Type="DateTime" Precision="0" />
+          <Property Name="s_time" Type="Time" Precision="7" />
+          <Property Name="e_time" Type="Time" Precision="7" />
+          <Property Name="status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="amount" Type="Decimal" Precision="18" Scale="0" />
+          <Property Name="mlevel" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="c_name" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="Fromdate" Type="DateTime" Precision="0" />
+          <Property Name="Todate" Type="DateTime" Precision="0" />
+          <Property Name="request_time" Type="Time" Precision="7" />
+          <NavigationProperty Name="appuser" Relationship="Self.FK__booking__cid__34C8D9D1" FromRole="booking" ToRole="appuser" />
+          <NavigationProperty Name="ground" Relationship="Self.FK__booking__gid__33D4B598" FromRole="booking" ToRole="ground" />
+        </EntityType>
+        <EntityType Name="city">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="areas" Relationship="Self.FK__area__cityid__4BAC3F29" FromRole="city" ToRole="area" />
+        </EntityType>
+        <EntityType Name="facility">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="ground_facility" Relationship="Self.FK__ground_faci__fid__239E4DCF" FromRole="facility" ToRole="ground_facility" />
+        </EntityType>
+        <EntityType Name="feedback">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="comment" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="rating" Type="Int32" />
+          <Property Name="gid" Type="Int32" />
+          <Property Name="cid" Type="Int32" />
+          <Property Name="f_date" Type="DateTime" Precision="0" />
+          <NavigationProperty Name="appuser" Relationship="Self.FK__feedback__cid__2F10007B" FromRole="feedback" ToRole="appuser" />
+          <NavigationProperty Name="ground" Relationship="Self.FK__feedback__gid__2E1BDC42" FromRole="feedback" ToRole="ground" />
+        </EntityType>
+        <EntityType Name="ground">
+          <Key>
+            <PropertyRef Name="gid" />
+          </Key>
+          <Property Name="gid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="gname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="city" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="area" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="capacity" Type="Int32" />
+          <Property Name="gtype" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="contact" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="image" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="address" Type="String" MaxLength="300" FixedLength="false" Unicode="false" />
+          <Property Name="description" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="size" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="oid" Type="Int32" />
+          <Property Name="m_duration" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="mfee" Type="Int32" />
+          <Property Name="disc" Type="Int32" />
+          <NavigationProperty Name="appuser" Relationship="Self.FK__ground__oid__0DAF0CB0" FromRole="ground" ToRole="appuser" />
+          <NavigationProperty Name="bookings" Relationship="Self.FK__booking__gid__33D4B598" FromRole="ground" ToRole="booking" />
+          <NavigationProperty Name="feedbacks" Relationship="Self.FK__feedback__gid__2E1BDC42" FromRole="ground" ToRole="feedback" />
+          <NavigationProperty Name="ground_facility" Relationship="Self.FK__ground_faci__gid__22AA2996" FromRole="ground" ToRole="ground_facility" />
+          <NavigationProperty Name="memberships" Relationship="Self.FK__membership__gid__286302EC" FromRole="ground" ToRole="membership" />
+          <NavigationProperty Name="schedules" Relationship="Self.FK__schedule__gid__1A14E395" FromRole="ground" ToRole="schedule" />
+          <NavigationProperty Name="ground1" Relationship="Self.FK_ground_ground" FromRole="ground" ToRole="ground1" />
+          <NavigationProperty Name="ground2" Relationship="Self.FK_ground_ground" FromRole="ground1" ToRole="ground" />
+        </EntityType>
+        <EntityType Name="ground_facility">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="gid" Type="Int32" />
+          <Property Name="fid" Type="Int32" />
+          <NavigationProperty Name="facility" Relationship="Self.FK__ground_faci__fid__239E4DCF" FromRole="ground_facility" ToRole="facility" />
+          <NavigationProperty Name="ground" Relationship="Self.FK__ground_faci__gid__22AA2996" FromRole="ground_facility" ToRole="ground" />
+        </EntityType>
+        <EntityType Name="membership">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="requestdate" Type="DateTime" Precision="0" />
+          <Property Name="joindate" Type="DateTime" Precision="0" />
+          <Property Name="enddate" Type="DateTime" Precision="0" />
+          <Property Name="amount" Type="Int32" />
+          <Property Name="duration" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="status" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="gid" Type="Int32" />
+          <Property Name="cid" Type="Int32" />
+          <NavigationProperty Name="appuser" Relationship="Self.FK__membership__cid__29572725" FromRole="membership" ToRole="appuser" />
+          <NavigationProperty Name="ground" Relationship="Self.FK__membership__gid__286302EC" FromRole="membership" ToRole="ground" />
+        </EntityType>
+        <EntityType Name="schedule">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="day" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Name="fee" Type="Int32" />
+          <Property Name="starttime" Type="Time" Precision="7" />
+          <Property Name="endtime" Type="Time" Precision="7" />
+          <Property Name="gid" Type="Int32" />
+          <NavigationProperty Name="ground" Relationship="Self.FK__schedule__gid__1A14E395" FromRole="schedule" ToRole="ground" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <Association Name="FK__booking__cid__34C8D9D1">
+          <End Role="appuser" Type="Self.appuser" Multiplicity="0..1" />
+          <End Role="booking" Type="Self.booking" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="appuser">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="booking">
+              <PropertyRef Name="cid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__feedback__cid__2F10007B">
+          <End Role="appuser" Type="Self.appuser" Multiplicity="0..1" />
+          <End Role="feedback" Type="Self.feedback" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="appuser">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="feedback">
+              <PropertyRef Name="cid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ground__oid__0DAF0CB0">
+          <End Role="appuser" Type="Self.appuser" Multiplicity="0..1" />
+          <End Role="ground" Type="Self.ground" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="appuser">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ground">
+              <PropertyRef Name="oid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__membership__cid__29572725">
+          <End Role="appuser" Type="Self.appuser" Multiplicity="0..1" />
+          <End Role="membership" Type="Self.membership" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="appuser">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="membership">
+              <PropertyRef Name="cid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__area__cityid__4BAC3F29">
+          <End Role="city" Type="Self.city" Multiplicity="0..1" />
+          <End Role="area" Type="Self.area" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="city">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="area">
+              <PropertyRef Name="cityid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__booking__gid__33D4B598">
+          <End Role="ground" Type="Self.ground" Multiplicity="0..1" />
+          <End Role="booking" Type="Self.booking" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ground">
+              <PropertyRef Name="gid" />
+            </Principal>
+            <Dependent Role="booking">
+              <PropertyRef Name="gid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ground_faci__fid__239E4DCF">
+          <End Role="facility" Type="Self.facility" Multiplicity="0..1" />
+          <End Role="ground_facility" Type="Self.ground_facility" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="facility">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="ground_facility">
+              <PropertyRef Name="fid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__feedback__gid__2E1BDC42">
+          <End Role="ground" Type="Self.ground" Multiplicity="0..1" />
+          <End Role="feedback" Type="Self.feedback" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ground">
+              <PropertyRef Name="gid" />
+            </Principal>
+            <Dependent Role="feedback">
+              <PropertyRef Name="gid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ground_faci__gid__22AA2996">
+          <End Role="ground" Type="Self.ground" Multiplicity="0..1" />
+          <End Role="ground_facility" Type="Self.ground_facility" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ground">
+              <PropertyRef Name="gid" />
+            </Principal>
+            <Dependent Role="ground_facility">
+              <PropertyRef Name="gid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__membership__gid__286302EC">
+          <End Role="ground" Type="Self.ground" Multiplicity="0..1" />
+          <End Role="membership" Type="Self.membership" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ground">
+              <PropertyRef Name="gid" />
+            </Principal>
+            <Dependent Role="membership">
+              <PropertyRef Name="gid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__schedule__gid__1A14E395">
+          <End Role="ground" Type="Self.ground" Multiplicity="0..1" />
+          <End Role="schedule" Type="Self.schedule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ground">
+              <PropertyRef Name="gid" />
+            </Principal>
+            <Dependent Role="schedule">
+              <PropertyRef Name="gid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ground_ground">
+          <End Role="ground" Type="Self.ground" Multiplicity="1" />
+          <End Role="ground1" Type="Self.ground" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="ground">
+              <PropertyRef Name="gid" />
+            </Principal>
+            <Dependent Role="ground1">
+              <PropertyRef Name="gid" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="playgroundEntities4" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="appusers" EntityType="Self.appuser" />
+          <EntitySet Name="areas" EntityType="Self.area" />
+          <EntitySet Name="bookings" EntityType="Self.booking" />
+          <EntitySet Name="cities" EntityType="Self.city" />
+          <EntitySet Name="facilities" EntityType="Self.facility" />
+          <EntitySet Name="feedbacks" EntityType="Self.feedback" />
+          <EntitySet Name="grounds" EntityType="Self.ground" />
+          <EntitySet Name="ground_facility" EntityType="Self.ground_facility" />
+          <EntitySet Name="memberships" EntityType="Self.membership" />
+          <EntitySet Name="schedules" EntityType="Self.schedule" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <AssociationSet Name="FK__booking__cid__34C8D9D1" Association="Self.FK__booking__cid__34C8D9D1">
+            <End Role="appuser" EntitySet="appusers" />
+            <End Role="booking" EntitySet="bookings" />
+          </AssociationSet>
+          <AssociationSet Name="FK__feedback__cid__2F10007B" Association="Self.FK__feedback__cid__2F10007B">
+            <End Role="appuser" EntitySet="appusers" />
+            <End Role="feedback" EntitySet="feedbacks" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ground__oid__0DAF0CB0" Association="Self.FK__ground__oid__0DAF0CB0">
+            <End Role="appuser" EntitySet="appusers" />
+            <End Role="ground" EntitySet="grounds" />
+          </AssociationSet>
+          <AssociationSet Name="FK__membership__cid__29572725" Association="Self.FK__membership__cid__29572725">
+            <End Role="appuser" EntitySet="appusers" />
+            <End Role="membership" EntitySet="memberships" />
+          </AssociationSet>
+          <AssociationSet Name="FK__area__cityid__4BAC3F29" Association="Self.FK__area__cityid__4BAC3F29">
+            <End Role="city" EntitySet="cities" />
+            <End Role="area" EntitySet="areas" />
+          </AssociationSet>
+          <AssociationSet Name="FK__booking__gid__33D4B598" Association="Self.FK__booking__gid__33D4B598">
+            <End Role="ground" EntitySet="grounds" />
+            <End Role="booking" EntitySet="bookings" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ground_faci__fid__239E4DCF" Association="Self.FK__ground_faci__fid__239E4DCF">
+            <End Role="facility" EntitySet="facilities" />
+            <End Role="ground_facility" EntitySet="ground_facility" />
+          </AssociationSet>
+          <AssociationSet Name="FK__feedback__gid__2E1BDC42" Association="Self.FK__feedback__gid__2E1BDC42">
+            <End Role="ground" EntitySet="grounds" />
+            <End Role="feedback" EntitySet="feedbacks" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ground_faci__gid__22AA2996" Association="Self.FK__ground_faci__gid__22AA2996">
+            <End Role="ground" EntitySet="grounds" />
+            <End Role="ground_facility" EntitySet="ground_facility" />
+          </AssociationSet>
+          <AssociationSet Name="FK__membership__gid__286302EC" Association="Self.FK__membership__gid__286302EC">
+            <End Role="ground" EntitySet="grounds" />
+            <End Role="membership" EntitySet="memberships" />
+          </AssociationSet>
+          <AssociationSet Name="FK__schedule__gid__1A14E395" Association="Self.FK__schedule__gid__1A14E395">
+            <End Role="ground" EntitySet="grounds" />
+            <End Role="schedule" EntitySet="schedules" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ground_ground" Association="Self.FK_ground_ground">
+            <End Role="ground" EntitySet="grounds" />
+            <End Role="ground1" EntitySet="grounds" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="playgroundModelStoreContainer" CdmEntityContainer="playgroundEntities4">
+          <EntitySetMapping Name="appusers">
+            <EntityTypeMapping TypeName="playgroundModel.appuser">
+              <MappingFragment StoreEntitySet="appuser">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="role" ColumnName="role" />
+                <ScalarProperty Name="contact" ColumnName="contact" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="areas">
+            <EntityTypeMapping TypeName="playgroundModel.area">
+              <MappingFragment StoreEntitySet="area">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="cityid" ColumnName="cityid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="bookings">
+            <EntityTypeMapping TypeName="playgroundModel.booking">
+              <MappingFragment StoreEntitySet="booking">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="gid" ColumnName="gid" />
+                <ScalarProperty Name="cid" ColumnName="cid" />
+                <ScalarProperty Name="requestdate" ColumnName="requestdate" />
+                <ScalarProperty Name="matchdate" ColumnName="matchdate" />
+                <ScalarProperty Name="s_time" ColumnName="s_time" />
+                <ScalarProperty Name="e_time" ColumnName="e_time" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="amount" ColumnName="amount" />
+                <ScalarProperty Name="mlevel" ColumnName="mlevel" />
+                <ScalarProperty Name="c_name" ColumnName="c_name" />
+                <ScalarProperty Name="Fromdate" ColumnName="Fromdate" />
+                <ScalarProperty Name="Todate" ColumnName="Todate" />
+                <ScalarProperty Name="request_time" ColumnName="request_time" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="cities">
+            <EntityTypeMapping TypeName="playgroundModel.city">
+              <MappingFragment StoreEntitySet="city">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="facilities">
+            <EntityTypeMapping TypeName="playgroundModel.facility">
+              <MappingFragment StoreEntitySet="facility">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="feedbacks">
+            <EntityTypeMapping TypeName="playgroundModel.feedback">
+              <MappingFragment StoreEntitySet="feedback">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="comment" ColumnName="comment" />
+                <ScalarProperty Name="rating" ColumnName="rating" />
+                <ScalarProperty Name="gid" ColumnName="gid" />
+                <ScalarProperty Name="cid" ColumnName="cid" />
+                <ScalarProperty Name="f_date" ColumnName="f_date" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="grounds">
+            <EntityTypeMapping TypeName="playgroundModel.ground">
+              <MappingFragment StoreEntitySet="ground">
+                <ScalarProperty Name="gid" ColumnName="gid" />
+                <ScalarProperty Name="gname" ColumnName="gname" />
+                <ScalarProperty Name="city" ColumnName="city" />
+                <ScalarProperty Name="area" ColumnName="area" />
+                <ScalarProperty Name="capacity" ColumnName="capacity" />
+                <ScalarProperty Name="gtype" ColumnName="gtype" />
+                <ScalarProperty Name="contact" ColumnName="contact" />
+                <ScalarProperty Name="image" ColumnName="image" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="size" ColumnName="size" />
+                <ScalarProperty Name="oid" ColumnName="oid" />
+                <ScalarProperty Name="m_duration" ColumnName="m_duration" />
+                <ScalarProperty Name="mfee" ColumnName="mfee" />
+                <ScalarProperty Name="disc" ColumnName="disc" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ground_facility">
+            <EntityTypeMapping TypeName="playgroundModel.ground_facility">
+              <MappingFragment StoreEntitySet="ground_facility">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="gid" ColumnName="gid" />
+                <ScalarProperty Name="fid" ColumnName="fid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="memberships">
+            <EntityTypeMapping TypeName="playgroundModel.membership">
+              <MappingFragment StoreEntitySet="membership">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="requestdate" ColumnName="requestdate" />
+                <ScalarProperty Name="joindate" ColumnName="joindate" />
+                <ScalarProperty Name="enddate" ColumnName="enddate" />
+                <ScalarProperty Name="amount" ColumnName="amount" />
+                <ScalarProperty Name="duration" ColumnName="duration" />
+                <ScalarProperty Name="status" ColumnName="status" />
+                <ScalarProperty Name="gid" ColumnName="gid" />
+                <ScalarProperty Name="cid" ColumnName="cid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="schedules">
+            <EntityTypeMapping TypeName="playgroundModel.schedule">
+              <MappingFragment StoreEntitySet="schedule">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="day" ColumnName="day" />
+                <ScalarProperty Name="fee" ColumnName="fee" />
+                <ScalarProperty Name="starttime" ColumnName="starttime" />
+                <ScalarProperty Name="endtime" ColumnName="endtime" />
+                <ScalarProperty Name="gid" ColumnName="gid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="playgroundModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

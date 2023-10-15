@@ -1,0 +1,182 @@
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\DPMSapi.dll.config
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\DPMSapi.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\DPMSapi.pdb
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\csc.exe
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\csc.exe.config
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\csc.rsp
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\csi.exe
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\csi.exe.config
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\csi.rsp
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.AppContext.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Console.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.IO.Compression.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Net.Http.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.ValueTuple.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\vbc.exe
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\vbc.exe.config
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\vbc.rsp
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\VBCSCompiler.exe
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\Antlr3.Runtime.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\EntityFramework.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\EntityFramework.SqlServer.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\Newtonsoft.Json.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\System.Net.Http.Formatting.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\System.Web.Helpers.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\System.Web.Http.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\System.Web.Http.WebHost.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\System.Web.Mvc.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\System.Web.Optimization.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\System.Web.Razor.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\System.Web.WebPages.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\System.Web.WebPages.Razor.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\WebGrease.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\EntityFramework.xml
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\EntityFramework.SqlServer.xml
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\Newtonsoft.Json.xml
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\System.Net.Http.Formatting.xml
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\System.Web.Helpers.xml
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\System.Web.Http.xml
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\System.Web.Http.WebHost.xml
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\System.Web.Mvc.xml
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\System.Web.Optimization.xml
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\System.Web.Razor.xml
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\System.Web.WebPages.xml
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\System.Web.WebPages.Razor.xml
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\Antlr3.Runtime.pdb
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\obj\Debug\DPMSapi.csproj.AssemblyReference.cache
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\obj\Debug\DPMSapi.csproj.CoreCompileInputs.cache
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\obj\Debug\DPMSapi.csproj.CopyComplete
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\obj\Debug\DPMSapi.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\obj\Debug\DPMSapi.pdb
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\Ninject.dll
+C:\Users\Basit Awan\source\repos\DPMSapi\DPMSapi\bin\Ninject.xml
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\DPMSapi.dll.config
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\DPMSapi.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\DPMSapi.pdb
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\csc.exe
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\csc.exe.config
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\csc.rsp
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\csi.exe
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\csi.exe.config
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\csi.rsp
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.AppContext.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Console.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.IO.Compression.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Net.Http.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Net.Sockets.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.ValueTuple.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Xml.XPath.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\vbc.exe
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\vbc.exe.config
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\vbc.rsp
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\VBCSCompiler.exe
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\Antlr3.Runtime.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\EntityFramework.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\EntityFramework.SqlServer.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\Newtonsoft.Json.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\Ninject.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\System.Net.Http.Formatting.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\System.Web.Helpers.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\System.Web.Http.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\System.Web.Http.WebHost.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\System.Web.Mvc.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\System.Web.Optimization.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\System.Web.Razor.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\System.Web.WebPages.Deployment.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\System.Web.WebPages.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\System.Web.WebPages.Razor.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\WebGrease.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\EntityFramework.xml
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\EntityFramework.SqlServer.xml
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\Ninject.xml
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\Newtonsoft.Json.xml
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\System.Net.Http.Formatting.xml
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\System.Web.Helpers.xml
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\System.Web.Http.xml
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\System.Web.Http.WebHost.xml
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\System.Web.Mvc.xml
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\System.Web.Optimization.xml
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\System.Web.Razor.xml
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\System.Web.WebPages.xml
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\System.Web.WebPages.Deployment.xml
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\System.Web.WebPages.Razor.xml
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\Antlr3.Runtime.pdb
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\obj\Debug\DPMSapi.csproj.AssemblyReference.cache
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\obj\Debug\DPMSapi.csproj.CoreCompileInputs.cache
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\obj\Debug\DPMSapi.csproj.CopyComplete
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\obj\Debug\DPMSapi.dll
+C:\Users\apple\source\repos\DPMSapi\DPMSapi\obj\Debug\DPMSapi.pdb

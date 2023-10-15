@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="playgroundModelStoreContainer" CdmEntityContainer="playgroundEntities4">
+    <EntitySetMapping Name="appusers">
+      <EntityTypeMapping TypeName="playgroundModel.appuser">
+        <MappingFragment StoreEntitySet="appuser">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="role" ColumnName="role" />
+          <ScalarProperty Name="contact" ColumnName="contact" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="areas">
+      <EntityTypeMapping TypeName="playgroundModel.area">
+        <MappingFragment StoreEntitySet="area">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="cityid" ColumnName="cityid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bookings">
+      <EntityTypeMapping TypeName="playgroundModel.booking">
+        <MappingFragment StoreEntitySet="booking">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="gid" ColumnName="gid" />
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="requestdate" ColumnName="requestdate" />
+          <ScalarProperty Name="matchdate" ColumnName="matchdate" />
+          <ScalarProperty Name="s_time" ColumnName="s_time" />
+          <ScalarProperty Name="e_time" ColumnName="e_time" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="mlevel" ColumnName="mlevel" />
+          <ScalarProperty Name="c_name" ColumnName="c_name" />
+          <ScalarProperty Name="Fromdate" ColumnName="Fromdate" />
+          <ScalarProperty Name="Todate" ColumnName="Todate" />
+          <ScalarProperty Name="request_time" ColumnName="request_time" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cities">
+      <EntityTypeMapping TypeName="playgroundModel.city">
+        <MappingFragment StoreEntitySet="city">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="facilities">
+      <EntityTypeMapping TypeName="playgroundModel.facility">
+        <MappingFragment StoreEntitySet="facility">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="feedbacks">
+      <EntityTypeMapping TypeName="playgroundModel.feedback">
+        <MappingFragment StoreEntitySet="feedback">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="comment" ColumnName="comment" />
+          <ScalarProperty Name="rating" ColumnName="rating" />
+          <ScalarProperty Name="gid" ColumnName="gid" />
+          <ScalarProperty Name="cid" ColumnName="cid" />
+          <ScalarProperty Name="f_date" ColumnName="f_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="grounds">
+      <EntityTypeMapping TypeName="playgroundModel.ground">
+        <MappingFragment StoreEntitySet="ground">
+          <ScalarProperty Name="gid" ColumnName="gid" />
+          <ScalarProperty Name="gname" ColumnName="gname" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="area" ColumnName="area" />
+          <ScalarProperty Name="capacity" ColumnName="capacity" />
+          <ScalarProperty Name="gtype" ColumnName="gtype" />
+          <ScalarProperty Name="contact" ColumnName="contact" />
+          <ScalarProperty Name="image" ColumnName="image" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="size" ColumnName="size" />
+          <ScalarProperty Name="oid" ColumnName="oid" />
+          <ScalarProperty Name="m_duration" ColumnName="m_duration" />
+          <ScalarProperty Name="mfee" ColumnName="mfee" />
+          <ScalarProperty Name="disc" ColumnName="disc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ground_facility">
+      <EntityTypeMapping TypeName="playgroundModel.ground_facility">
+        <MappingFragment StoreEntitySet="ground_facility">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="gid" ColumnName="gid" />
+          <ScalarProperty Name="fid" ColumnName="fid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="memberships">
+      <EntityTypeMapping TypeName="playgroundModel.membership">
+        <MappingFragment StoreEntitySet="membership">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="requestdate" ColumnName="requestdate" />
+          <ScalarProperty Name="joindate" ColumnName="joindate" />
+          <ScalarProperty Name="enddate" ColumnName="enddate" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+          <ScalarProperty Name="duration" ColumnName="duration" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="gid" ColumnName="gid" />
+          <ScalarProperty Name="cid" ColumnName="cid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="schedules">
+      <EntityTypeMapping TypeName="playgroundModel.schedule">
+        <MappingFragment StoreEntitySet="schedule">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="day" ColumnName="day" />
+          <ScalarProperty Name="fee" ColumnName="fee" />
+          <ScalarProperty Name="starttime" ColumnName="starttime" />
+          <ScalarProperty Name="endtime" ColumnName="endtime" />
+          <ScalarProperty Name="gid" ColumnName="gid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="playgroundModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
