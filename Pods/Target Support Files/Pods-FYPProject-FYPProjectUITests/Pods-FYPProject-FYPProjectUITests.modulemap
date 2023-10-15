@@ -1,0 +1,6 @@
+framework module Pods_FYPProject_FYPProjectUITests {
+  umbrella header "Pods-FYPProject-FYPProjectUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

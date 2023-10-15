@@ -1,0 +1,20 @@
+PODS:
+  - DropDown (2.3.13)
+  - RateBar (1.3.2)
+
+DEPENDENCIES:
+  - DropDown
+  - RateBar
+
+SPEC REPOS:
+  trunk:
+    - DropDown
+    - RateBar
+
+SPEC CHECKSUMS:
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  RateBar: 4d7b4a42148c600dde9a2bd537f567dab31b63d4
+
+PODFILE CHECKSUM: 4c4a68b839439b247da253461294a5f70a04b637
+
+COCOAPODS: 1.11.3
